@@ -78,15 +78,6 @@ body {
 }
 
 .contact-btn {
-    /* background: #fff;
-    color: #000 !important;
-    padding: 6px 20px;
-    border-radius: 20px; */
-}
-
-
-
-.contact-btn {
     /* background: #a20303; */
     color: #fff !important;
     padding: 6px 20px;
@@ -464,3 +455,118 @@ body {
     color: green;
 }
 /* about and skill section css end  */
+/* portfolio section css style start  */
+.protfolio{
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: #d4d4d4;
+}
+.project-card{
+   display: flex; 
+   flex-wrap: wrap;
+   max-width: 80%;
+   margin: 50px auto;
+   justify-content: center;
+   gap: 30px;
+}
+.card-item {
+    width: 200px;
+    height: 250px;
+    background-color: #000;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-item a img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card-btn {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    z-index: 111;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.card-item:hover .card-btn {
+    opacity: 1;
+}
+
+.card-btn a {
+    display: block;
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: #fff;
+    background-color: #D4621A;
+    padding: 8px 18px;
+    border-radius: 10px;
+    text-decoration: none;
+    transform: translateY(20px);
+    transition: transform 0.4s ease;
+}
+
+.card-item:hover .card-btn a {
+    transform: translateY(0);
+}
+
+.more-project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #0b0a0a;
+    color: #D4621A;
+    cursor: pointer;
+    transition: background-color 0.4s ease, color 0.4s ease, transform 0.4s ease;
+}
+
+.more-project-card h5 {
+    font-size: 40px;
+    margin-bottom: 5px;
+    transition: transform 0.4s ease;
+}
+
+.more-project-card p {
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.more-project-card a {
+    display: block;
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: #ddd;
+    background-color: #D4621A;
+    padding: 8px 18px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.more-project-card:hover {
+    background-color: rgba(255, 255, 255, 0.253);
+    color: #000;
+    transform: translateY(-5px);
+}
+
+.more-project-card:hover h5 {
+    transform: scale(1.15);
+}
+
+.more-project-card:hover a {
+    background-color: #000;
+    color: #fff;
+}
